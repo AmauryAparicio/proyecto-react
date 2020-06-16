@@ -1,22 +1,24 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
+import { Fragment } from "react";
 import Sidebar from "./Sidebar";
 import Articles from "./Articles";
 
-class Blog extends Component {
+class Search extends Component {
   state = {
     articles: {},
     status: null,
   };
 
   render() {
+    var busqueda = this.props.match.params.search;
     return (
       <Fragment>
         <section id="slider" className="slider-small">
-          <h1>Blog</h1>
+          <h1>Busqueda: {busqueda}</h1>
         </section>
         <div className="center">
           <div id="content">
-            <Articles />
+            <Articles search={busqueda} />
           </div>
           <Sidebar blog="true" />
         </div>
@@ -25,4 +27,4 @@ class Blog extends Component {
   }
 }
 
-export default Blog;
+export default Search;

@@ -57,6 +57,16 @@ body textarea {
     transition: 0.3s all
 }
 
+body input[type=file] {
+
+    width: 100%;
+    min-height: 30px;
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 5px;
+    transition: 0.3s all
+}
+
 body input[type=text]:focus,
 body textarea:focus {
     box-shadow: 0px 0px 5px #444 inset
@@ -98,6 +108,7 @@ body #header #logo img {
     0% {
         transform: rotate(0deg)
     }
+
     to {
         transform: rotate(360deg)
     }
@@ -136,6 +147,10 @@ body #header #menu ul li a {
 
 body #header #menu ul li a:hover {
     color: #38A7C5
+}
+
+.active {
+    border-bottom: 2px solid #38A7C5
 }
 
 body #slider {
@@ -284,6 +299,32 @@ body #content .article-item a:hover {
     text-decoration: underline
 }
 
+body #content .article-item .btn-danger {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background: red;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.5s all
+}
+
+body #content .article-item .btn-danger:hover {
+
+    text-decoration: underline
+}
+
+body #content .article-item .btn-warning {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background: orange;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 15px;
+    transition: 0.5s all
+}
+
 body #sidebar {
     width: 25%;
     float: left
@@ -321,6 +362,11 @@ body #footer p {
     padding: 0
 }
 
+.thumb {
+    width: 170px;
+    float: left;
+}
+
 @media (max-width:1489px) {
     body .center {
         width: 85%
@@ -331,6 +377,7 @@ body #footer p {
     body .center {
         width: 95%
     }
+
     body #header #menu ul {
         width: auto
     }
@@ -343,6 +390,7 @@ body #footer p {
         margin: 0 auto;
         margin-top: 20px
     }
+
     body #header #menu,
     body #header #menu ul {
         clear: both;
@@ -352,13 +400,16 @@ body #footer p {
         padding: 0;
         line-height: 43px
     }
+
     body #content {
         float: none;
         width: 100%
     }
+
     body #content .mid-form {
         width: 90%
     }
+
     body #sidebar {
         float: none;
         width: 60%;
@@ -372,28 +423,35 @@ body #footer p {
         min-height: 130px;
         overflow: hidden
     }
+
     body #header #menu,
     body #header #menu ul {
         line-height: 50px
     }
+
     body #header #menu,
     body #header #menu ul li {
         margin-left: 7px;
         margin-right: 7px
     }
+
     body #slider .btn-white {
         margin-top: 20px
     }
+
     body #slider.slider-big {
         height: 180px
     }
+
     body #slider.slider-big h1 {
         font-size: 19px;
         padding-top: 30px
     }
+
     body #slider.slider-small {
         height: 100px
     }
+
     body #slider.slider-small h1 {
         padding-top: 35px
     }
